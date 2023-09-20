@@ -79,9 +79,6 @@
     hostname (Tor link generated):
         bkiwy4lhsoyvbxmnhee6eyv7mjz5v4ptzoyp7iejqicqh73rhf7lvead.onion
 
-        or,
-        z5n6z2r4cfj6gozjr4pg23yhcuowzxvphxhvgvupxtr55jg3dft2zxqd.onion
-
     access.log (optional, see realtime logs): 
         C:\xampp\apache\logs
 
