@@ -1,30 +1,76 @@
-# Tor state file last generated on 2023-09-20 15:59:11 local time
+# Tor state file last generated on 2023-09-20 16:28:20 local time
 # Other times below are in UTC
 # You *do not* need to edit this file.
 
-CircuitBuildTimeBin 1005 1
-CircuitBuildTimeBin 1265 1
-CircuitBuildTimeBin 1295 1
-CircuitBuildTimeBin 1365 1
+CircuitBuildTimeBin 615 2
+CircuitBuildTimeBin 665 1
+CircuitBuildTimeBin 715 1
+CircuitBuildTimeBin 795 1
+CircuitBuildTimeBin 815 1
+CircuitBuildTimeBin 835 1
+CircuitBuildTimeBin 845 1
+CircuitBuildTimeBin 895 1
+CircuitBuildTimeBin 955 1
+CircuitBuildTimeBin 975 1
+CircuitBuildTimeBin 1005 2
+CircuitBuildTimeBin 1015 1
+CircuitBuildTimeBin 1085 1
+CircuitBuildTimeBin 1095 1
+CircuitBuildTimeBin 1105 2
+CircuitBuildTimeBin 1165 4
+CircuitBuildTimeBin 1215 1
+CircuitBuildTimeBin 1255 1
+CircuitBuildTimeBin 1265 4
+CircuitBuildTimeBin 1295 3
+CircuitBuildTimeBin 1305 2
+CircuitBuildTimeBin 1315 1
+CircuitBuildTimeBin 1365 2
+CircuitBuildTimeBin 1375 1
+CircuitBuildTimeBin 1495 1
+CircuitBuildTimeBin 1515 1
 CircuitBuildTimeBin 1535 1
-CircuitBuildTimeBin 1565 1
+CircuitBuildTimeBin 1545 1
+CircuitBuildTimeBin 1555 1
+CircuitBuildTimeBin 1565 2
+CircuitBuildTimeBin 1575 1
+CircuitBuildTimeBin 1605 1
+CircuitBuildTimeBin 1615 1
+CircuitBuildTimeBin 1635 1
+CircuitBuildTimeBin 1655 1
+CircuitBuildTimeBin 1665 1
+CircuitBuildTimeBin 1695 1
 CircuitBuildTimeBin 1705 1
-CircuitBuildTimeBin 1845 1
-CircuitBuildTimeBin 1945 1
+CircuitBuildTimeBin 1725 1
+CircuitBuildTimeBin 1745 2
+CircuitBuildTimeBin 1785 4
+CircuitBuildTimeBin 1845 2
+CircuitBuildTimeBin 1915 1
+CircuitBuildTimeBin 1925 1
+CircuitBuildTimeBin 1945 2
+CircuitBuildTimeBin 1965 1
 CircuitBuildTimeBin 1975 1
+CircuitBuildTimeBin 2015 1
 CircuitBuildTimeBin 2085 1
 CircuitBuildTimeBin 2125 1
+CircuitBuildTimeBin 2165 1
+CircuitBuildTimeBin 2195 1
+CircuitBuildTimeBin 2225 1
 CircuitBuildTimeBin 2285 1
+CircuitBuildTimeBin 2315 1
 CircuitBuildTimeBin 2325 1
+CircuitBuildTimeBin 2375 1
 CircuitBuildTimeBin 2445 1
 CircuitBuildTimeBin 2535 2
 CircuitBuildTimeBin 2555 1
 CircuitBuildTimeBin 2595 1
-CircuitBuildTimeBin 2765 1
+CircuitBuildTimeBin 2675 2
+CircuitBuildTimeBin 2765 2
 CircuitBuildTimeBin 2835 1
 CircuitBuildTimeBin 2855 1
 CircuitBuildTimeBin 2895 1
-CircuitBuildTimeBin 2915 1
+CircuitBuildTimeBin 2915 2
+CircuitBuildTimeBin 2925 1
+CircuitBuildTimeBin 3035 1
 CircuitBuildTimeBin 3115 1
 CircuitBuildTimeBin 3125 1
 CircuitBuildTimeBin 3465 2
@@ -63,9 +109,10 @@ CircuitBuildTimeBin 11455 1
 CircuitBuildTimeBin 14375 1
 CircuitBuildTimeBin 19405 1
 CircuitBuildTimeBin 22535 1
+CircuitBuildAbandonedCount 1
 Dormant 0
-Guard in=default rsa_id=8F06AD26DFAAC4DC7FCBC7036EF4D9277186DFE7 nickname=CyberTransfer sampled_on=2023-09-17T15:25:26 sampled_idx=0 sampled_by=0.4.7.14 listed=1 confirmed_on=2023-09-17T20:46:34 confirmed_idx=0 pb_use_attempts=60.500000 pb_use_successes=60.500000 pb_circ_attempts=248.000000 pb_circ_successes=240.000000 pb_successful_circuits_closed=235.000000 pb_collapsed_circuits=5.000000 pb_timeouts=5.000000
-Guard in=default rsa_id=57D0B5A215824CF1A7414DE61B6559C09526759F nickname=chuckles sampled_on=2023-09-10T17:48:38 sampled_idx=1 sampled_by=0.4.7.14 listed=1 confirmed_on=2023-09-20T03:02:45 confirmed_idx=1 pb_use_attempts=87.000000 pb_use_successes=87.000000 pb_circ_attempts=238.000000 pb_circ_successes=227.000000 pb_successful_circuits_closed=227.000000 pb_timeouts=7.000000
+Guard in=default rsa_id=8F06AD26DFAAC4DC7FCBC7036EF4D9277186DFE7 nickname=CyberTransfer sampled_on=2023-09-17T15:25:26 sampled_idx=0 sampled_by=0.4.7.14 listed=1 confirmed_on=2023-09-17T20:46:34 confirmed_idx=0 pb_use_attempts=88.500000 pb_use_successes=88.500000 pb_circ_attempts=277.000000 pb_circ_successes=269.000000 pb_successful_circuits_closed=264.000000 pb_collapsed_circuits=5.000000 pb_timeouts=5.000000
+Guard in=default rsa_id=57D0B5A215824CF1A7414DE61B6559C09526759F nickname=chuckles sampled_on=2023-09-10T17:48:38 sampled_idx=1 sampled_by=0.4.7.14 listed=1 confirmed_on=2023-09-20T03:02:45 confirmed_idx=1 pb_use_attempts=59.500000 pb_use_successes=59.500000 pb_circ_attempts=274.000000 pb_circ_successes=261.000000 pb_successful_circuits_closed=261.000000 pb_timeouts=9.000000
 Guard in=default rsa_id=4FD9A030C9DC98FA24076071CBB6FD843BC62D7D nickname=ashP sampled_on=2023-09-12T09:29:43 sampled_idx=2 sampled_by=0.4.7.14 listed=1
 Guard in=default rsa_id=B75123A66450D8622C5EED90D8EDEDF09825CC46 nickname=fffb sampled_on=2023-09-10T23:14:40 sampled_idx=3 sampled_by=0.4.7.14 listed=1
 Guard in=default rsa_id=7AD4431DF94AC46976B0243CF4BE874C443051B8 nickname=rex sampled_on=2023-09-13T07:22:33 sampled_idx=4 sampled_by=0.4.7.14 listed=1
@@ -101,6 +148,6 @@ Guard in=default rsa_id=806F1A2BC111D628EE97619DBEA002514B860AA5 nickname=kc sam
 Guard in=default rsa_id=EC9621433DF2C996DE55A7063BAAFB2B71C3C01B nickname=zinho sampled_on=2023-09-20T07:29:58 sampled_idx=34 sampled_by=0.4.7.14 listed=1
 Guard in=default rsa_id=97E4BAB582717350E6FF6160899FA9B665C834E3 nickname=LSTorRelay01 sampled_on=2023-09-09T15:18:30 sampled_idx=35 sampled_by=0.4.7.14 listed=1
 Guard in=default rsa_id=9204BC0764BDB40DE8DE4A56B0C4AEC7C2B49D84 nickname=lowFog sampled_on=2023-09-16T15:32:53 sampled_idx=36 sampled_by=0.4.7.14 listed=1
-LastWritten 2023-09-20 15:59:11
+LastWritten 2023-09-20 16:28:20
 TorVersion Tor 0.4.7.14 (git-cac0389f911df057)
-TotalBuildTimes 66
+TotalBuildTimes 136

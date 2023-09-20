@@ -11,7 +11,7 @@
 
 user_pref("app.update.lastUpdateTime.addon-background-update-timer", 1695223724);
 user_pref("app.update.lastUpdateTime.background-update-timer", 1695223604);
-user_pref("app.update.lastUpdateTime.browser-cleanup-thumbnails", 1695223364);
+user_pref("app.update.lastUpdateTime.browser-cleanup-thumbnails", 1695227132);
 user_pref("app.update.lastUpdateTime.search-engine-update-timer", 1695223484);
 user_pref("app.update.lastUpdateTime.xpi-signature-verification", 1695223820);
 user_pref("browser.bookmarks.addedImportButton", true);
@@ -80,7 +80,7 @@ user_pref("sanity-test.driver-version", "27.20.22025.2003");
 user_pref("sanity-test.running", false);
 user_pref("sanity-test.version", "20230707050101");
 user_pref("security.sandbox.content.tempDirSuffix", "{083181a5-ca43-4a6d-9653-926c5f9cd4ce}");
-user_pref("toolkit.startup.last_success", 1695225222);
+user_pref("toolkit.startup.last_success", 1695227171);
 user_pref("toolkit.telemetry.reportingpolicy.firstRun", false);
 user_pref("torbrowser.migration.version", 1);
 user_pref("torbrowser.settings.bridges.builtin_type", "");
