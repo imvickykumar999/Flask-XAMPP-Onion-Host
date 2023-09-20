@@ -5,7 +5,7 @@ ClientOnionAuthDir C:\Users\Vicky\Tor Browser\Browser\TorBrowser\Data\Tor\onion-
 DataDirectory C:\Users\Vicky\Tor Browser\Browser\TorBrowser\Data\Tor
 GeoIPFile C:\Users\Vicky\Tor Browser\Browser\TorBrowser\Data\Tor\geoip
 GeoIPv6File C:\Users\Vicky\Tor Browser\Browser\TorBrowser\Data\Tor\geoip6
-HiddenServiceDir C:\Users\Vicky\Tor Browser\haystak
+HiddenServiceDir C:\Users\Vicky\Desktop\Repository\Host-Onion\Tor Browser\hackers
 HiddenServicePort 80 127.0.0.1
 # HiddenServiceDir C:\Users\Vicky\Tor Browser\hackers
 # HiddenServicePort 80 hackers.localhost
