@@ -87,3 +87,4 @@
 [Wed Sep 20 21:23:31.759472 2023] [ssl:warn] [pid 18032:tid 336] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
 [Wed Sep 20 21:23:32.043483 2023] [ssl:warn] [pid 18032:tid 336] AH01909: www.example.com:443:0 server certificate does NOT include an ID which matches the server name
 [Wed Sep 20 21:23:32.133592 2023] [mpm_winnt:notice] [pid 18032:tid 336] AH00354: Child: Starting 150 worker threads.
+[Wed Sep 20 21:31:11.182001 2023] [mpm_winnt:crit] [pid 18032:tid 336] AH02538: Child: Parent process exited abruptly. Child process is ending
