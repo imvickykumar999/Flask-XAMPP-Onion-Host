@@ -11,8 +11,12 @@
 
 <br>
 
-    Tutorial: 
-        https://youtu.be/Yj_ta_xdKf4
+    Tutorial (Server Host):
+        Single Server:
+            https://youtu.be/Yj_ta_xdKf4
+
+        Multiple Server (optional):
+            https://youtu.be/M4E7UgKiw34
 
     Also, Host on Raspberry Pi
         https://youtu.be/bllS9tkCkaM
@@ -23,30 +27,39 @@
         HiddenServiceDir C:\Users\Vicky\Tor Browser\haystak
         HiddenServicePort 80 haystak.localhost
 
+        # (optional)
         HiddenServiceDir C:\Users\Vicky\Tor Browser\hackers
         HiddenServicePort 80 hackers.localhost
 
     index.html (add html files here): 
         C:\xampp\htdocs
 
-    Hosted Multiple .onion links
+    Hosted Multiple .onion links (optional)
         https://stackoverflow.com/a/42810629/11493297
 
-    httpd-vhosts.conf
+    httpd-vhosts.conf (optional)
         C:\xampp\apache\conf\extra
 
             ServerName hackers.localhost
             DocumentRoot "C:\xampp\htdocs\hackers"
 
-    hosts
+    hosts (optional)
+    (to edit hosts file, Run Notepad as Administrator)
         C:\Windows\System32\drivers\etc
 
             127.0.0.1  haystak.localhost
             127.0.0.1  hackers.localhost
 
     localhost (test locally):
-        http://hackers.localhost/
-        http://haystak.localhost/
+        (On normal browser)
+
+            localhost.index.html
+            or,
+            http://127.0.0.1/
+
+            (optional)
+            http://hackers.localhost/
+            http://haystak.localhost/
         
     XAMPP Control Panel (click start on apache):
         Module: Apache
@@ -62,10 +75,13 @@
     hostname (Tor link generated):
         bkiwy4lhsoyvbxmnhee6eyv7mjz5v4ptzoyp7iejqicqh73rhf7lvead.onion
 
-    access.log (see realtime logs): 
+        or,
+        z5n6z2r4cfj6gozjr4pg23yhcuowzxvphxhvgvupxtr55jg3dft2zxqd.onion
+
+    access.log (optional, see realtime logs): 
         C:\xampp\apache\logs
 
-    (optional, to down the site)
+    (to down the site)
         Close/Disconnect Tor Browser
 
         and,

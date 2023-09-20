@@ -7,5 +7,5 @@ GeoIPFile C:\Users\Vicky\Tor Browser\Browser\TorBrowser\Data\Tor\geoip
 GeoIPv6File C:\Users\Vicky\Tor Browser\Browser\TorBrowser\Data\Tor\geoip6
 HiddenServiceDir C:\Users\Vicky\Tor Browser\haystak
 HiddenServicePort 80 haystak.localhost
-HiddenServiceDir C:\Users\Vicky\Tor Browser\hackers
-HiddenServicePort 80 hackers.localhost
+# HiddenServiceDir C:\Users\Vicky\Tor Browser\hackers
+# HiddenServicePort 80 hackers.localhost
