@@ -80,7 +80,7 @@ user_pref("sanity-test.driver-version", "27.20.22025.2003");
 user_pref("sanity-test.running", false);
 user_pref("sanity-test.version", "20230707050101");
 user_pref("security.sandbox.content.tempDirSuffix", "{083181a5-ca43-4a6d-9653-926c5f9cd4ce}");
-user_pref("toolkit.startup.last_success", 1695224605);
+user_pref("toolkit.startup.last_success", 1695225222);
 user_pref("toolkit.telemetry.reportingpolicy.firstRun", false);
 user_pref("torbrowser.migration.version", 1);
 user_pref("torbrowser.settings.bridges.builtin_type", "");
