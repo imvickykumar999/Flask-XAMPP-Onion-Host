@@ -17,26 +17,41 @@
     Also, Host on Raspberry Pi
         https://youtu.be/bllS9tkCkaM
 
-    XAMPP Control Panel (click start on apache):
-        Module: Apache
-        Action: Start
-
     torrc (paste 3 lines): 
     C:\Users\Vicky\Tor Browser\Browser\TorBrowser\Data\Tor\
 
-        #HiddenService
-        HiddenServiceDir C:\Users\Vicky\Tor Browser\domain name
-        HiddenServicePort 80 127.0.0.1
+        HiddenServiceDir C:\Users\Vicky\Tor Browser\haystak
+        HiddenServicePort 80 haystak.localhost
+
+        HiddenServiceDir C:\Users\Vicky\Tor Browser\hackers
+        HiddenServicePort 80 hackers.localhost
 
     index.html (add html files here): 
         C:\xampp\htdocs
 
-    localhost (test locally):
-        http://127.0.0.1/
+    Hosted Multiple .onion links
+        https://stackoverflow.com/a/42810629/11493297
 
-        or,
-        http://localhost/index.html
+    httpd-vhosts.conf
+        C:\xampp\apache\conf\extra
+
+            ServerName hackers.localhost
+            DocumentRoot "C:\xampp\htdocs\hackers"
+
+    hosts
+        C:\Windows\System32\drivers\etc
+
+            127.0.0.1  haystak.localhost
+            127.0.0.1  hackers.localhost
+
+    localhost (test locally):
+        http://hackers.localhost/
+        http://haystak.localhost/
         
+    XAMPP Control Panel (click start on apache):
+        Module: Apache
+        Action: Start
+
     Open Tor Browser 
         Start Tor Browser (.shortcut)
             C:\Users\Vicky\Tor Browser
