@@ -43,6 +43,10 @@
             ServerName hackers.localhost
             DocumentRoot "C:\xampp\htdocs\hackers"
 
+    httpd-ssl.conf
+        https://stackoverflow.com/a/71018094/11493297
+            C:\xampp\apache\conf\extra
+
     hosts (optional)
     (to edit hosts file, Run Notepad as Administrator)
         C:\Windows\System32\drivers\etc
