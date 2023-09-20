@@ -5,6 +5,9 @@
     Tutorial: 
         https://youtu.be/Yj_ta_xdKf4
 
+    Also, Host on Raspberry Pi
+        https://youtu.be/bllS9tkCkaM
+
     XAMPP Control Panel (click start on apache):
         Module: Apache
         Action: Start
@@ -16,7 +19,7 @@
         HiddenServiceDir C:\Users\Vicky\Tor Browser\domain name
         HiddenServicePort 80 127.0.0.1
 
-    index.html (add ftml files here): 
+    index.html (add html files here): 
         C:\xampp\htdocs
 
     localhost (test locally):
