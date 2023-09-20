@@ -1,6 +1,6 @@
-># `Host Onion Websites` : [`index.html`](https://github.com/imvickykumar999/haystak5njsmn2hqkewecpaxetahtwhsbsa64jom2k22z5afxhnpxfid.onion/blob/0b08ed7e1d233ca626348fbf49da90c5767c921c/index.html#L1)
+># `Host Onion Websites`
 >
->![image](https://github.com/imvickykumar999/Host-Onion/assets/50515418/5ccf936b-9c7c-4c50-9c25-2e6cc32c8667)
+>![image](https://github.com/imvickykumar999/XAMPP-Onion-Host/assets/50515418/c7cfdbba-b070-4993-bf9a-d3b3bfecd713)
 
 <br>
 
@@ -77,7 +77,7 @@
             C:\Users\Vicky\Tor Browser\domain name
 
     hostname (Tor link generated):
-        bkiwy4lhsoyvbxmnhee6eyv7mjz5v4ptzoyp7iejqicqh73rhf7lvead.onion
+        i5hfkdpxlqjbojuiqt242h5vtgvic7jyzkfkj5ttdcatwycudprl74qd.onion
 
     access.log (optional, see realtime logs): 
         C:\xampp\apache\logs
