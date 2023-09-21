@@ -16,8 +16,8 @@
     torrc: 
         \Tor Browser\Browser\TorBrowser\Data\Tor\
     
-            HiddenServiceDir C:\Users\Vicky\Desktop\Repository\Host-Onion\Tor Browser\HiddenService\static_folder
-            HiddenServicePort 80 127.0.0.1
+    HiddenServiceDir C:\Users\Vicky\Desktop\Repository\Host-Onion\Tor Browser\HiddenService\static_folder
+    HiddenServicePort 80 127.0.0.1
 
     index.html
         (add html files here):
@@ -52,8 +52,8 @@
     torrc: 
         \Tor Browser\Browser\TorBrowser\Data\Tor\
     
-            HiddenServiceDir C:\Users\Vicky\Desktop\Repository\Host-Onion\Tor Browser\HiddenService\flask_app
-            HiddenServicePort 80 127.0.0.1:9151
+    HiddenServiceDir C:\Users\Vicky\Desktop\Repository\Host-Onion\Tor Browser\HiddenService\flask_app
+    HiddenServicePort 80 127.0.0.1:9151
 
     Start Tor Browser (.shortcut):
         (files will be generated at)
