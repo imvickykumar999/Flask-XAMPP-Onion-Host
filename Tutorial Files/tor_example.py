@@ -7,7 +7,7 @@ from stem.control import Controller
 from flask import Flask
 
 if __name__ == "__main__":
-    app = Flask("__name__")
+    app = Flask(__name__)
 
     port = 5000
     host = "127.0.0.1"
@@ -28,7 +28,7 @@ if __name__ == "__main__":
             ])
         svc_name = open(hidden_svc_dir + "/hostname", "r").read().strip()
         print (" * Created host: %s" % svc_name)
-        
+
     except Exception as e:
         print (e)
     app.run()
