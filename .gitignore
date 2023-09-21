@@ -1,7 +1,6 @@
 
 Tor Browser/*/hs_ed25519_secret_key
-# Tor Browser/Browser/*
-# !Tor Browser/Browser/TorBrowser/Data/Tor/
+Tor Browser/Browser/
 Proton/VPN/
 xampp/*
 !xampp/htdocs/
