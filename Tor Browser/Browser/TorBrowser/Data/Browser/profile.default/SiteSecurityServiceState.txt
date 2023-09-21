@@ -1,3 +1,0 @@
-addons.mozilla.org:HSTS	0	19620	1726759728905,1,0,2
-securedrop.org:HSTS	0	19620	1758295370539,1,1,2
-aus1.torproject.org:HSTS	0	19620	1710991370178,1,0,2
