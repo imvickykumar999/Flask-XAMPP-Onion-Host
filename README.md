@@ -1,91 +1,123 @@
 ># `Host Onion Websites`
 >
->![image](https://github.com/imvickykumar999/XAMPP-Onion-Host/assets/50515418/c7cfdbba-b070-4993-bf9a-d3b3bfecd713)
+>![image](https://github.com/imvickykumar999/XAMPP-Onion-Host/assets/50515418/3acb1e4a-9426-48b6-ba00-20c8d777c7c3)
 
 <br>
 
-## `Steps to Host on Tor`
+# `Steps to Host on Tor`
 
     Fun Fact: 
         onion sites are hosted locally on your device (Laptop, Raspberry Pi, etc.)
 
 <br>
 
-    Tutorial (Server Host):
-        Single Server:
-            https://youtu.be/Yj_ta_xdKf4
+## `for static deployment`
+    
+    torrc: 
+        \Tor Browser\Browser\TorBrowser\Data\Tor\
+    
+            HiddenServiceDir C:\Users\Vicky\Desktop\Repository\Host-Onion\Tor Browser\HiddenService\static_folder
+            HiddenServicePort 80 127.0.0.1
 
-        Multiple Server (optional):
-            https://youtu.be/M4E7UgKiw34
+    index.html
+        (add html files here):
+            \xampp\htdocs
+            
+    Run Server:
+        XAMPP Control Panel 
+            
+            Module: Apache
+            Action: Start
 
-    Also, Host on Raspberry Pi
-        https://youtu.be/bllS9tkCkaM
-
-    torrc (paste 3 lines): 
-    C:\Users\Vicky\Tor Browser\Browser\TorBrowser\Data\Tor\
-
-        HiddenServiceDir C:\Users\Vicky\Tor Browser\haystak
-        HiddenServicePort 80 haystak.localhost
-
-        # (optional)
-        HiddenServiceDir C:\Users\Vicky\Tor Browser\hackers
-        HiddenServicePort 80 hackers.localhost
-
-    index.html (add html files here): 
-        C:\xampp\htdocs
-
-    Hosted Multiple .onion links (optional)
-        https://stackoverflow.com/a/42810629/11493297
-
-    httpd-vhosts.conf (optional)
-        C:\xampp\apache\conf\extra
-
-            ServerName hackers.localhost
-            DocumentRoot "C:\xampp\htdocs\hackers"
-
-    httpd-ssl.conf
-        https://stackoverflow.com/a/71018094/11493297
-            C:\xampp\apache\conf\extra
-
-    hosts (optional)
-    (to edit hosts file, Run Notepad as Administrator)
-        C:\Windows\System32\drivers\etc
-
-            127.0.0.1  haystak.localhost
-            127.0.0.1  hackers.localhost
-
-    localhost (test locally):
-        (On normal browser)
-
-            localhost.index.html
-            or,
-            http://127.0.0.1/
-
-            (optional)
-            http://hackers.localhost/
-            http://haystak.localhost/
-        
-    XAMPP Control Panel (click start on apache):
-        Module: Apache
-        Action: Start
-
-    Open Tor Browser 
-        Start Tor Browser (.shortcut)
-            C:\Users\Vicky\Tor Browser
-
-        (files will generate at):
-            C:\Users\Vicky\Tor Browser\domain name
-
+    Start Tor Browser (.shortcut):
+        (files will be generated at)
+            \Tor Browser\HiddenService\static_folder
+            
     hostname (Tor link generated):
         i5hfkdpxlqjbojuiqt242h5vtgvic7jyzkfkj5ttdcatwycudprl74qd.onion
 
-    access.log (optional, see realtime logs): 
+    access.log (optional, see real-time logs): 
         C:\xampp\apache\logs
 
-    (to down the site)
-        Close/Disconnect Tor Browser
-
-        and,
-        XAMPP Control Panel (click stop on apache):
+    To down the site:
+        XAMPP Control Panel:
+    
             Module: Apache
             Action: Stop
+
+<br>
+
+## `for flask deployment`
+
+    torrc: 
+        \Tor Browser\Browser\TorBrowser\Data\Tor\
+    
+            HiddenServiceDir C:\Users\Vicky\Desktop\Repository\Host-Onion\Tor Browser\HiddenService\flask_app
+            HiddenServicePort 80 127.0.0.1:9151
+
+    Start Tor Browser (.shortcut):
+        (files will be generated at)
+            \Tor Browser\HiddenService\flask_app
+            
+    Run Server:
+        python flask_app.py
+    
+            http://127.0.0.1/
+            or,
+            localhost
+
+    hostname (Tor link generated):
+        ikruscfbjtf7zcd2dvxfoiqzl4aqqorudxmf22jhrhnxjb24e2mdieqd.onion
+
+    access logs and errors:
+        (in CMD)
+
+    To down the site:
+        Ctrl+C in CMD Server
+        Close Tor Browser
+
+<br>
+
+## `flask_app.py`
+
+> First open tor browser, then run below file.
+
+<br>
+
+    >>> python flask_app.py
+
+```python
+from flask import Flask
+app = Flask(__name__)
+
+@app.route('/')
+def hello_world():
+    return 'Hello, World!'
+
+if __name__ == '__main__':
+    from stem.control import Controller
+    
+    port = 5000
+    host = "127.0.0.1"
+    hidden_svc_dir = "C:/Users/Vicky/Desktop/Repository/Host-Onion/Tor Browser/HiddenService/flask_app"
+
+    print (" * Getting controller")
+    controller = Controller.from_port(address=host, port=9151)
+
+    try:
+        controller.authenticate(password="")
+        controller.set_options([
+            ("HiddenServiceDir", hidden_svc_dir),
+            ("HiddenServicePort", "80 %s:%s" % (host, str(port)))
+            ])
+        svc_name = open(hidden_svc_dir + "/hostname", "r").read().strip()
+        print (" * Created host: %s" % svc_name)
+
+    except Exception as e:
+        print (e)
+
+    app.run(
+        host="0.0.0.0", 
+        debug=True
+    )
+```
