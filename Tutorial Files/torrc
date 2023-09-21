@@ -5,7 +5,15 @@ ClientOnionAuthDir C:\Users\Vicky\Tor Browser\Browser\TorBrowser\Data\Tor\onion-
 DataDirectory C:\Users\Vicky\Tor Browser\Browser\TorBrowser\Data\Tor
 GeoIPFile C:\Users\Vicky\Tor Browser\Browser\TorBrowser\Data\Tor\geoip
 GeoIPv6File C:\Users\Vicky\Tor Browser\Browser\TorBrowser\Data\Tor\geoip6
+
+# for static websites
 HiddenServiceDir C:\Users\Vicky\Desktop\Repository\Host-Onion\Tor Browser\hackers
 HiddenServicePort 80 127.0.0.1
+
+# for multiple hosting on same server (optional)
 # HiddenServiceDir C:\Users\Vicky\Tor Browser\hackers
 # HiddenServicePort 80 hackers.localhost
+
+# for flask deploymet
+HiddenServiceDir C:\Users\Vicky\Desktop\Repository\Host-Onion\Tor Browser\tor_example
+HiddenServicePort 80 127.0.0.1:9151
