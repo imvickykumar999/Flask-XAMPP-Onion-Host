@@ -113,7 +113,7 @@ if __name__ == '__main__':
     
     port = 5000
     host = "127.0.0.1"
-    hidden_svc_dir = "C:/Users/Vicky/Desktop/Repository/Host-Onion/Tor Browser/sample_flask"
+    hidden_svc_dir = "C:/Users/Vicky/Desktop/Repository/Host-Onion/Tor Browser/HiddenService/sample_flask"
 
     print (" * Getting controller")
     controller = Controller.from_port(address=host, port=9151)

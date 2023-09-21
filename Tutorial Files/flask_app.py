@@ -1,24 +1,25 @@
+
 # https://jordan-wright.com/blog/2014/10/06/creating-tor-hidden-services-with-python/
 
 # First open tor browser,
 # then run this file
 
-from stem.control import Controller
 from flask import Flask
+app = Flask(__name__)
 
-if __name__ == "__main__":
-    app = Flask(__name__)
+@app.route('/')
+def hello_world():
+    return 'Hello, World!'
 
+if __name__ == '__main__':
+    from stem.control import Controller
+    
     port = 5000
     host = "127.0.0.1"
-    hidden_svc_dir = "C:/Users/Vicky/Desktop/Repository/Host-Onion/Tor Browser/tor_example"
+    hidden_svc_dir = "C:/Users/Vicky/Desktop/Repository/Host-Onion/Tor Browser/HiddenService/flask_app"
 
-    @app.route('/')
-    def index():
-        return "<h1>Tor works!</h1>"
-    
     print (" * Getting controller")
-    controller = Controller.from_port(address="127.0.0.1", port=9151)
+    controller = Controller.from_port(address=host, port=9151)
 
     try:
         controller.authenticate(password="")
@@ -31,4 +32,8 @@ if __name__ == "__main__":
 
     except Exception as e:
         print (e)
-    app.run()
+
+    app.run(
+        host="0.0.0.0", 
+        debug=True
+    )
