@@ -2,12 +2,8 @@
 import requests, random
 from flask import Flask, render_template
 from bs4 import BeautifulSoup as bs
-from stem.control import Controller
 
 app = Flask(__name__)
-port = 5000
-host = "127.0.0.1"
-hidden_svc_dir = "C:/Users/Vicky/Desktop/Repository/Host-Onion/Tor Browser/sample_flask"
 
 def get_news(source):
     if source == 'inshorts':
@@ -113,6 +109,12 @@ def page_not_found(e):
     return render_template('404.html'), 404
 
 if __name__ == '__main__':
+    from stem.control import Controller
+    
+    port = 5000
+    host = "127.0.0.1"
+    hidden_svc_dir = "C:/Users/Vicky/Desktop/Repository/Host-Onion/Tor Browser/sample_flask"
+
     print (" * Getting controller")
     controller = Controller.from_port(address=host, port=9151)
 
