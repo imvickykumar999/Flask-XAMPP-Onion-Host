@@ -5,8 +5,8 @@ onion = 'onion'
 loc = input('Enter installed path of Tor Browser : ')
 
 if loc == '':
-    # loc = fr'C:\Users\Vicky\Desktop\Repository\Host-Onion\Tor Browser'
-    loc = fr'C:/Users/{os.getlogin()}/Desktop/Tor Browser'
+    loc = fr'C:\Users\{os.getlogin()}\Desktop\Repository\Host-Onion\Tor Browser'
+    # loc = fr'C:/Users/{os.getlogin()}/Desktop/Tor Browser'
 loc_ = loc.replace('\\', '/')
 
 torrc = f'''

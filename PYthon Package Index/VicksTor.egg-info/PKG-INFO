@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: VicksTor
+Version: 0.1.0
+Summary: Hosting Flask on Tor Browser.
+Home-page: https://github.com/imvickykumar999/Flask-XAMPP-Onion-Host
+Author: Vicky Kumar
+License: MIT
+Keywords: Hosting,Flask,Tor Browser
+
+
+https://raw.githubusercontent.com/imvickykumar999/Flask-XAMPP-Onion-Host/main/Tutorial%20Files/VicksTor.py
+
+# just add this 2 line to host flask on Tor
+
+from HostTor import VicksTor
+
+import VicksTor

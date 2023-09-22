@@ -1,0 +1,9 @@
+MANIFEST.in
+Readme.txt
+about.txt
+setup.py
+HostTor/VicksTor.py
+VicksTor.egg-info/PKG-INFO
+VicksTor.egg-info/SOURCES.txt
+VicksTor.egg-info/dependency_links.txt
+VicksTor.egg-info/top_level.txt

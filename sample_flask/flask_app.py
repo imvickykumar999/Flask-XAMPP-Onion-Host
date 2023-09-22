@@ -3,6 +3,8 @@ import requests, random
 from flask import Flask, render_template
 from bs4 import BeautifulSoup as bs
 
+from HostTor import VicksTor
+import VicksTor
 app = Flask(__name__)
 
 def get_news(source):
@@ -109,5 +111,4 @@ def page_not_found(e):
     return render_template('404.html'), 404
 
 if __name__ == '__main__':
-    import VicksTor
     app.run(host="0.0.0.0")
