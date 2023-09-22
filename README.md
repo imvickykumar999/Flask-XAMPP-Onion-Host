@@ -1,6 +1,6 @@
 ># `Host Flask on Tor using pip`
 >
->![image](https://github.com/imvickykumar999/Flask-XAMPP-Onion-Host/assets/50515418/eb8a6357-813f-4c88-9aaf-fb30f4e94750)
+>![image](https://github.com/imvickykumar999/Flask-XAMPP-Onion-Host/assets/50515418/0e6c3d47-8930-414a-af6b-ad49d62e5d85)
 
 <br>
 
