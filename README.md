@@ -1,10 +1,35 @@
-># `Host Onion Websites`
+># `Host Flask on Tor using pip`
 >
->![image](https://github.com/imvickykumar999/XAMPP-Onion-Host/assets/50515418/3acb1e4a-9426-48b6-ba00-20c8d777c7c3)
+>![image](https://github.com/imvickykumar999/Flask-XAMPP-Onion-Host/assets/50515418/eb8a6357-813f-4c88-9aaf-fb30f4e94750)
 
 <br>
 
-# `Steps to Host on Tor`
+## 🫡 `Use my` `VicksTor Library`
+
+```python
+from flask import Flask
+
+# https://pypi.org/project/VicksTor/
+from HostTor import VicksTor
+import VicksTor
+
+app = Flask(__name__)
+
+@app.route('/')
+def hello_world():
+    return 'Hello, World! <br> I am Anonumous.'
+
+if __name__ == '__main__':
+    app.run()
+```
+
+<br>
+
+![image](https://github.com/imvickykumar999/Flask-XAMPP-Onion-Host/assets/50515418/137a55a7-bfe9-4304-a385-2a51b0c10cdd)
+
+<br>
+
+# `Steps to Host on Tor Manually`
 
     Fun Fact: 
         onion sites are hosted locally on your device (Laptop, Raspberry Pi, etc.)
