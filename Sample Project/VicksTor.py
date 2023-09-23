@@ -1,12 +1,12 @@
 import os, time
 from stem.control import Controller
 
-onion = 'onion'
-loc = input('Enter installed path of Tor Browser : ')
+onion = 'HiddenServiceDir'
+loc = input('\nEnter installed path of Tor Browser : ')
 
 if loc == '':
-    loc = fr'C:\Users\{os.getlogin()}\Desktop\Repository\Host-Onion\Tor Browser'
-    # loc = fr'C:/Users/{os.getlogin()}/Desktop/Tor Browser'
+    # loc = fr'C:\Users\{os.getlogin()}\Desktop\Repository\Host-Onion\Tor Browser'
+    loc = f'C:/Users/{os.getlogin()}/Desktop/Tor Browser'
 loc_ = loc.replace('\\', '/')
 
 torrc = f'''

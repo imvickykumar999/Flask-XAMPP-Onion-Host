@@ -1,7 +1,6 @@
 
-Tor Browser/HiddenService/*/hs_ed25519_secret_key
-Final Project/onion/hs_ed25519_secret_key
-Sample Project/onion/hs_ed25519_secret_key
+Final Project/HiddenServiceDir/hs_ed25519_secret_key
+Sample Project/HiddenServiceDir/hs_ed25519_secret_key
 Tor Browser/Browser/
 Proton/VPN/
 xampp/*
