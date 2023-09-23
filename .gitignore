@@ -1,5 +1,7 @@
 
 Tor Browser/HiddenService/*/hs_ed25519_secret_key
+sample_flask/onion/*/hs_ed25519_secret_key
+Tutorial Files/onion/*/hs_ed25519_secret_key
 Tor Browser/Browser/
 Proton/VPN/
 xampp/*
