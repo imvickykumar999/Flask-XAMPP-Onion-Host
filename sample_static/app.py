@@ -6,10 +6,11 @@ import os
 from HostTor import VicksTor
 import VicksTor
 
-template_dir = os.path.abspath('.')
-app = Flask(__name__, 
-            template_folder=template_dir
-            )
+# template_dir = os.path.abspath('./')
+app = Flask(
+        __name__, 
+        # template_folder=template_dir
+    )
 
 @app.route('/')
 def hello_world():
