@@ -1,10 +1,12 @@
 
+from HostTor import VicksTor
+import VicksTor
+VicksTor.run_server('flask')
+
 import requests, random
 from flask import Flask, render_template
 from bs4 import BeautifulSoup as bs
 
-from HostTor import VicksTor
-import VicksTor
 app = Flask(__name__)
 
 def get_news(source):

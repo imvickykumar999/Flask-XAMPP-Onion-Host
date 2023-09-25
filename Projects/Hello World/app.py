@@ -1,6 +1,7 @@
 
 from HostTor import VicksTor
 import VicksTor
+VicksTor.run_server('flask')
 
 from flask import Flask, render_template
 app = Flask(__name__)

@@ -1,5 +1,5 @@
 
-def run_server(server = 'xampp'):
+def run_server(server = 'flask'):
     import os, time
     from stem.control import Controller
 
@@ -73,4 +73,4 @@ Run Server:
     except Exception as e:
         print(e)
 
-# run_server('flask')
+run_server('xampp')
