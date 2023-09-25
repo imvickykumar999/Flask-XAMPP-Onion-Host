@@ -1,0 +1,12 @@
+Type "help", "copyright", "credits" or "license" for more information.
+
+>>> import VicksTor as vix
+>>> vix.run_server('xampp')
+
+Enter installed path of Tor Browser :
+
+Enter installed path of XAMPP :
+
+ * Created host: rqyoahjwcmiulxpjtc6jekunezwqrt6wh5yoomncib2rkgqmvj2kmoid.onion
+
+>>>

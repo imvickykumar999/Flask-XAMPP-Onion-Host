@@ -73,4 +73,4 @@ Run Server:
     except Exception as e:
         print(e)
 
-run_server('xampp')
+# run_server('xampp')
