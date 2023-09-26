@@ -1,18 +1,17 @@
-># `Host Flask on Tor using pip`
+># `Host Flask` `on Tor` `using pip`
 >
->![image](https://github.com/imvickykumar999/Flask-XAMPP-Onion-Host/assets/50515418/0e6c3d47-8930-414a-af6b-ad49d62e5d85)
+>![image](https://github.com/imvickykumar999/Flask-XAMPP-Onion-Host/assets/50515418/05b2830f-e44e-49e3-9c79-d325cf105e58)
 
 <br>
 
-## 🫡 `Use my` `VicksTor Library`
+## 🫡 `Use my` [`VicksTor`](https://pypi.org/project/VicksTor/) `Library`
 
 ```python
-from flask import Flask
-
-# https://pypi.org/project/VicksTor/
 from HostTor import VicksTor
-import VicksTor
+import VicksTor as vix
+vix.run_server('flask')
 
+from flask import Flask
 app = Flask(__name__)
 
 @app.route('/')
@@ -130,7 +129,7 @@ if __name__ == '__main__':
 
 ## `flask_app.py`
 
-> First open tor browser, then run below file.
+> First open the Tor browser, then run the below file.
 
 <br>
 
