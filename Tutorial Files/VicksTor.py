@@ -59,13 +59,13 @@ def run_server(server = 'flask'):
                 ]
             )
         else:
-            '''
+            print('''
 Run Server:
     XAMPP Control Panel 
 
         Module: Apache
         Action: Start
-'''
+''')
 
         svc_name = open(hidden_svc_dir + "/hostname", "r").read().strip()
         print (f"\n * Created host: {svc_name}\n")
@@ -73,4 +73,4 @@ Run Server:
     except Exception as e:
         print(e)
 
-# run_server('flask')
+# run_server('xampp')
