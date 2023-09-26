@@ -18,7 +18,7 @@ def run_server(server = 'flask'):
 
         if xampp_loc == '':
             xampp_loc = fr'C:\Users\{os.getlogin()}\Desktop\Repository\Host-Onion\xampp\xampp-control.exe'
-            # xampp_loc = 'C:\xampp\xampp-control.exe'
+            # xampp_loc = fr'C:\xampp\xampp-control.exe'
         os.startfile(xampp_loc)
 
     torrc = f'''
@@ -73,4 +73,4 @@ Run Server:
     except Exception as e:
         print(e)
 
-# run_server('xampp')
+run_server('xampp')

@@ -8,8 +8,8 @@ def run_server(server = 'flask'):
     torrc_loc = input('\nEnter installed path of Tor Browser : ')
 
     if torrc_loc == '':
-        # torrc_loc = fr'C:\Users\{os.getlogin()}\Desktop\Repository\Host-Onion\Tor Browser'
-        torrc_loc = f'C:/Users/{os.getlogin()}/Desktop/Tor Browser'
+        torrc_loc = fr'C:\Users\{os.getlogin()}\Desktop\Repository\Host-Onion\Tor Browser'
+        # torrc_loc = f'C:/Users/{os.getlogin()}/Desktop/Tor Browser'
     torrc_loc_ = torrc_loc.replace('\\', '/')
 
     if server.lower() == 'xampp':
@@ -17,8 +17,8 @@ def run_server(server = 'flask'):
         xampp_loc = input('\nEnter installed path of XAMPP : ')
 
         if xampp_loc == '':
-            # xampp_loc = fr'C:\Users\{os.getlogin()}\Desktop\Repository\Host-Onion\xampp\xampp-control.exe'
-            xampp_loc = fr'C:\xampp\xampp-control.exe'
+            xampp_loc = fr'C:\Users\{os.getlogin()}\Desktop\Repository\Host-Onion\xampp\xampp-control.exe'
+            # xampp_loc = fr'C:\xampp\xampp-control.exe'
         os.startfile(xampp_loc)
 
     torrc = f'''
