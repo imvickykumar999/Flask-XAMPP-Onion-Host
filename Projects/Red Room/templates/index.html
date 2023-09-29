@@ -6,12 +6,25 @@
       Red Room (Spoof)
     </title>
 
+  <style>
+    body {
+      background-image: url('static/redroom.jpg');
+      background-repeat: repeat;
+      background-attachment: fixed;
+      background-size: 100%;
+    }
+  </style>
+
   </head>
   <body>
     <center>
     <br>
 
-      <h1>Red Room</h1>
+      <h1 style="color: red;">
+        Red Room
+      </h1>
+      <br><br><br>
+
       <div>
           <img src="{{ url_for('video') }}" width="50%"/>
       </div>
