@@ -3,9 +3,9 @@
 
 from flask import request, Flask
 # from HostTor import VicksTor
-import VicksTor
+# import VicksTor
 
-VicksTor.run_server('flask')
+# VicksTor.run_server('flask')
 app = Flask(__name__)
 
 @app.route("/", methods=["GET"])
