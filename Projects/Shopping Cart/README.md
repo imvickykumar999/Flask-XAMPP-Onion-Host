@@ -1,5 +1,8 @@
-# Shopping Cart  
-A simple E-commerce website using Flask.
+# `Dark Web Shopping Cart` ⚠️ (Spoof)
+
+    A simple E-commerce website using Flask.
+
+![image](https://github.com/imvickykumar999/Flask-XAMPP-Onion-Host/assets/50515418/158e9e2e-69cd-49d5-ac0d-bd9a552f8d97)
   
 ## Dependencies ##
 1. Python3
