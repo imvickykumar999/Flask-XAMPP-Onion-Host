@@ -2,5 +2,4 @@
 Projects/*/HiddenServiceDir/hs_ed25519_secret_key
 Tor Browser/Browser/
 Proton/VPN/
-xampp/*
-!xampp/htdocs/
+xampp/
