@@ -4,5 +4,3 @@ Tor Browser/Browser/
 Proton/VPN/
 xampp/*
 !xampp/htdocs/
-Apache CLI/httpd-2.4.57-win64-VS17/Apache24/*
-!Apache CLI/httpd-2.4.57-win64-VS17/Apache24/htdocs/
