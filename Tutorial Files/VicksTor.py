@@ -1,4 +1,11 @@
 
+# app = Flask(__name__, template_folder='./')
+
+# @app.route('/<path:filename>')  
+# def send_file(filename):
+#     return send_from_directory('./', filename)
+
+
 def run_server(server = 'flask'):
     import os, time
     from stem.control import Controller
@@ -72,5 +79,6 @@ Run Server:
 
     except Exception as e:
         print(e)
+
 
 # run_server('xampp')
