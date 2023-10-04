@@ -5,7 +5,7 @@ def run_server(server = 'flask'):
 
     onion = 'HiddenServiceDir'
     _port = ':9151'
-    torrc_loc = input('\nEnter installed path of Tor Browser : ')
+    torrc_loc = input('\nEnter installed path of `Tor Browser` folder : ')
 
     if torrc_loc == '':
         # torrc_loc = fr'C:\Users\{os.getlogin()}\Desktop\Repository\Host-Onion\Tor Browser'
@@ -14,7 +14,7 @@ def run_server(server = 'flask'):
 
     if server.lower() == 'xampp':
         _port = ''
-        xampp_loc = input('\nEnter installed path of XAMPP : ')
+        xampp_loc = input('\nEnter installed path of `xampp-control.exe` file: ')
 
         if xampp_loc == '':
             # xampp_loc = fr'C:\Users\{os.getlogin()}\Desktop\Repository\Host-Onion\xampp\xampp-control.exe'
