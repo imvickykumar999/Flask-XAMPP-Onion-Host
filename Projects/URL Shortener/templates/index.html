@@ -52,7 +52,10 @@
 
         {% if short_url %}
         <hr>
-        <span>{{ short_url }}</span><br>
+        <a target="_blank" href="{{ short_url }}">
+            <span>{{ short_url }}</span>
+        </a>
+        <br>
         {% endif %}
 
     </div>

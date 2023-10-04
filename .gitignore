@@ -4,4 +4,4 @@ Tor Browser/Browser/
 Proton/VPN/
 xampp/*
 !xampp/htdocs/
-# Projects/*/database.db
+Projects/*/database.db
