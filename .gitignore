@@ -4,5 +4,6 @@ Tor Browser/Browser/
 Proton/VPN/
 xampp/*
 !xampp/htdocs/
+# xampp/htdocs/Netflix Clone/*
 Projects/*/database.db
 Projects/*/creds.txt
