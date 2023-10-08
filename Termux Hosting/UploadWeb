@@ -1,0 +1,62 @@
+#!bin/bash
+#Coded by Suman
+echo -e " "
+killall php
+echo -e " "
+
+
+Logo () {
+white='\e[1;37m'
+green='\e[0;32m'
+blue='\e[1;34m'
+red='\e[1;31m'
+yellow='\e[1;33m'
+echo ""
+echo -e "\e[95m                       \e[33m                                                              
+██████   █████  ██████  ██   ██     ██     ██ ███████ ██████  
+██   ██ ██   ██ ██   ██ ██  ██      ██     ██ ██      ██   ██ 
+██   ██ ███████ ██████  █████       ██  █  ██ █████   ██████  
+██   ██ ██   ██ ██   ██ ██  ██      ██ ███ ██ ██      ██   ██ 
+██████  ██   ██ ██   ██ ██   ██      ███ ███  ███████ ██████  \e[0m\n"
+echo -e "\e[95m \e[0m\n"
+  echo""    
+  echo -e $'\e[1;33m\e[0m\e[1;31m  ██████████\e[0m'"\e[1;37m██████████"'\e[1;33m\e[0m\e[0;32m██████████\e[0m' '\e[1;95m\e[0m\e[1;32m Host Dark Website \e[0m''\e[1;37m\e[0m\e[1;37m [v 1.2] \e[0m'                                       
+  echo ""
+   echo -e $'\e[1;33m\e[0m\e[1;33m  [\e[0m\e[1;32m Github : \e[36mhttps://github.com/OnlineHacKing/HostDarkWeb \e[0m\e[1;32m\e[0m\e[1;33m]\e[0m'
+   echo ""
+sleep 1
+echo -e " \e[36mWebsite : \e[0m\e[92mwww.termux.xyz  \e[93m/  \e[92mwww.onlinehacking.org  "
+echo ""
+echo -e " \e[31mGitHub : \e[0m\e[93mhttps://github.com/OnlineHacKing  "
+echo ""
+echo -e " \e[97mTelegram : \e[0m\e[34mhttps://t.me/OnlineHacKing  "
+echo -e " "
+sleep 1                                               
+}
+
+clear
+Logo
+echo -e " "
+echo ""
+echo -e "\e[31m[\e[32m*\e[31m]\e[33m Enter Your Web File Folder Part : \e[m "
+echo -e " "
+echo -e "\e[31m[\e[32m*\e[31m]\e[33m Example : \e[32m/sdcard/Download/we/ \e[91mor \e[32m/storage/emulated/0/Download/web/  \e[m "
+echo " "
+echo " "
+read -p $'\e[31m[\e[32m*\e[31m] \e[33mEnter Part :\e[97m cd \e[97m' token
+cd $token
+echo ""
+echo ""
+echo ""
+echo -e $'\e[1;33m[\e[0m\e[1;91m Online Hacking \e[0m\e[1;33m]\e[0m\e[1;32m Starting Server..... \e[0m'
+echo ""
+php -S 127.0.0.1:8080 > /dev/null 2>&1 &
+sleep 3
+echo -e "\033[1;93mYou can check your server by accessing \e[34mhttp://127.0.0.1:8080"
+echo -e " "
+echo -e "  "
+echo -e $'\e[1;33m[\e[0m\e[1;91m Online HacKing \e[0m\e[1;33m]\e[0m\e[1;32m Done ! \e[0m'
+
+
+
+

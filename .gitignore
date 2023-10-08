@@ -7,3 +7,4 @@ xampp/*
 # xampp/htdocs/Netflix Clone/*
 Projects/*/database.db
 Projects/*/creds.txt
+Termux Hosting/web/HiddenServiceDir/hs_ed25519_secret_key
