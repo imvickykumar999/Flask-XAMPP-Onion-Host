@@ -1,10 +1,8 @@
 
-Projects/*/HiddenServiceDir/hs_ed25519_secret_key
-Tor Browser/Browser/
-Proton/VPN/
 xampp/*
+Proton/VPN/
 !xampp/htdocs/
-# xampp/htdocs/Netflix Clone/*
-Projects/*/database.db
+Tor Browser/Browser/
 Projects/*/creds.txt
-Termux Hosting/web/HiddenServiceDir/hs_ed25519_secret_key
+*hs_ed25519_secret_key
+Projects/*/database.db
