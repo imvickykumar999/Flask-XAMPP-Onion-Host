@@ -19,3 +19,10 @@
 
     or, python3 -m twine upload --repository-url https://test.pypi.org/legacy/ dist/*
 16. Enter your PyPi username and then password.
+
+https://www.askpython.com/python/examples/wheel-for-python-package
+17. Wheel File
+    >>> python3 setup.py bdist_wheel
+
+18. Installation
+    \dist> pip install VicksTor-0.1.1-py3-none-any.whl
