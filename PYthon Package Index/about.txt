@@ -1,5 +1,6 @@
 
 # How to Upload to PyPi :
+-------------------------
 
 1. creating a folder: any name
 2. creating a sub folder : vector
@@ -13,16 +14,31 @@
 10. include readme.txt
 11. include license.txt
 
-13. run 'python setup.py sdist' cmd in terminal
-14. install twine package :'pip install twine --upgrade'
-15. twine upload dist/*
+12. run 'python setup.py sdist bdist_wheel' cmd in terminal
+13. install twine package : 'pip install twine --upgrade'
+14. twine upload dist/*
+15. Enter your PyPi username and then password.
 
-    or, python3 -m twine upload --repository-url https://test.pypi.org/legacy/ dist/*
-16. Enter your PyPi username and then password.
+16. Installation
+    \dist> `pip install VicksTor-0.1.1-py3-none-any.whl`
+    or,    `pip install VicksTor-0.1.2.tar.gz`
+    or,    `pip install VicksTor` 
 
-https://www.askpython.com/python/examples/wheel-for-python-package
-17. Wheel File
-    >>> python3 setup.py bdist_wheel
 
-18. Installation
-    \dist> pip install VicksTor-0.1.1-py3-none-any.whl
+# Errors (API Token) ...
+------------------------
+
+>>> twine upload dist/* --verbose
+Uploading distributions to https://upload.pypi.org/legacy/
+
+Enter your username: imvickykumar999
+Enter your password: ***************
+
+Uploading VicksTor-0.1.2-py3-none-any.whl
+100% ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4.5/4.5 kB • 00:01 • ?
+
+WARNING  Error during upload. Retry with the --verbose option for more
+         details.
+ERROR    HTTPError: 401 Unauthorized from https://upload.pypi.org/legacy/
+         User imvickykumar999 has two factor auth enabled, an API Token or
+         Trusted Publisher must be used to upload in place of password.
