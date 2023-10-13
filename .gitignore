@@ -6,5 +6,8 @@ Tor Browser/Browser/
 Projects/*/creds.txt
 *hs_ed25519_secret_key
 Projects/*/database.db
-# Onion Share/OnionShare/lib/*
-# !Onion Share/OnionShare/lib/onionshare_cli/resources/
+
+Onion Share/OnionShare/lib/*
+!Onion Share/OnionShare/lib/onionshare_cli/
+Onion Share/OnionShare/lib/onionshare_cli/*
+!Onion Share/OnionShare/lib/onionshare_cli/resources/
