@@ -3,9 +3,9 @@ xampp/*
 Proton/VPN/
 !xampp/htdocs/
 Tor Browser/Browser/
-Spoof Projects/*/creds.txt
 *hs_ed25519_secret_key
-Spoof Projects/*/database.db
+*database.db
+*creds.txt
 
 Onion Share/OnionShare/lib/*
 !Onion Share/OnionShare/lib/onionshare_cli/
