@@ -2,8 +2,8 @@
 # https://machinelearningprojects.net/url-shortener-using-flask/
 
 # from HostTor import VicksTor
-import VicksTor
-VicksTor.run_server('flask')
+# import VicksTor
+# VicksTor.run_server('flask')
 
 import sqlite3
 from hashids import Hashids
