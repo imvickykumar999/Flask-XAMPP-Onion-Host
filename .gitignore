@@ -1,12 +1,14 @@
 
 xampp/*
+*email.js
+*creds.txt
 Proton/VPN/
+*database.db
 !xampp/htdocs/
 Tor Browser/Browser/
 *hs_ed25519_secret_key
-*database.db
-*creds.txt
 
+# Nested Folder Ignoring
 Onion Share/OnionShare/lib/*
 !Onion Share/OnionShare/lib/onionshare_cli/
 Onion Share/OnionShare/lib/onionshare_cli/*
