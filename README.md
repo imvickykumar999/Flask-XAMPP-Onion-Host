@@ -1,3 +1,9 @@
+# `Unzip Command`
+
+    unzip /home/imvickykumar/mysite/app.zip
+
+<br><br>
+
 ># `Host Flask` `on Tor` `using pip`
 >
 >![image](https://github.com/imvickykumar999/Flask-XAMPP-Onion-Host/assets/50515418/05b2830f-e44e-49e3-9c79-d325cf105e58)
