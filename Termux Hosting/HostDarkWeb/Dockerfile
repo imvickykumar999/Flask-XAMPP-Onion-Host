@@ -1,15 +1,15 @@
-FROM ubuntu:18.04
+from ubuntu:18.04
 
-RUN apt-get update
+run apt-get update
 
-RUN apt-get install -y python3.7
+run apt-get install -y python3.7
 
-RUN apt-get install -y nano
+run apt-get install -y nano
 
-RUN apt-get install -y wget
+run apt-get install -y wget
 
-RUN apt-get install -y tor
+run apt-get install -y tor
 
-ADD run-tor.sh .
+add run-tor.sh .
 
-CMD ["/bin/bash", "HostDarkLinux"]
+cmd ["/bin/bash", "HostDarkLinux"]
