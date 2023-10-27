@@ -1,20 +1,24 @@
 
 # from HostTor import VicksTor
-import VicksTor
+# import VicksTor
+# VicksTor.run_server('flask')
 
-from flask import Flask, render_template, Response
 import cv2
+from flask import (
+    Flask, 
+    render_template, 
+    Response
+)
 
 app = Flask(__name__)
-VicksTor.run_server('flask')
+ip = '192.168.0.100'
+port = '8080'
 
 username = 'imvickykumar999'
 password = 'imvickykumar999'
-ip = '192.168.0.101'
-port = '8080'
+camera = cv2.VideoCapture(f'http://{username}:{password}@{ip}:{port}/video')
 
-camera = cv2.VideoCapture('http://{username}:{password}@{ip}:{port}/video')
-# camera = cv2.VideoCapture('http://{ip}:{port}/video') # no authentication
+# camera = cv2.VideoCapture(f'http://{ip}:{port}/video') # no authentication
 # camera = cv2.VideoCapture(0) # laptop webcam
 
 def generate_frames():
