@@ -11,23 +11,23 @@ from flask import (
 )
 
 app = Flask(__name__)
-ip = '192.168.0.101'
-port = '8080'
+# ip = '192.168.0.101'
+# port = '8080'
 
-username = 'imvickykumar999'
-password = 'imvickykumar999'
-camera = cv2.VideoCapture(f'http://{username}:{password}@{ip}:{port}/video')
+# username = 'imvickykumar999'
+# password = 'imvickykumar999'
+# camera = cv2.VideoCapture(f'http://{username}:{password}@{ip}:{port}/video')
 
 # # # http://80.32.125.254:8080/cgi-bin/guestimage.html
-# ip = '80.32.125.254'
-# port = '8080'
+ip = '80.32.125.254'
+port = '8080'
 
 # camera = cv2.VideoCapture(f'http://{ip}:{port}') # no authentication
 # camera = cv2.VideoCapture(0) # laptop webcam
 
 def generate_frames():
     while True:
-        # camera = cv2.VideoCapture(f'http://{ip}:{port}/record/current.jpg')
+        camera = cv2.VideoCapture(f'http://{ip}:{port}/record/current.jpg')
 
         ## read the camera frame
         success, frame = camera.read()
