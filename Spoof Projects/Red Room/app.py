@@ -27,7 +27,7 @@ port = '8080'
 
 def generate_frames():
     while True:
-        camera = cv2.VideoCapture(f'http://{ip}:{port}/record/current.jpg')
+        camera = cv2.VideoCapture(f'http://{ip}:{port}/cgi-bin/faststream.jpg?stream=half&fps=25&rand=COUNTER')
 
         ## read the camera frame
         success, frame = camera.read()
